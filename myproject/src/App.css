@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  width: 550px;
+  background-color: #f9fbfe;
+}
+#billLabel {
+  color: #7b8794;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#billInput {
+  height: 40px;
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cbd2d9;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+.btnDiv {
+  background-color: #264fa2;
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  border-radius: 4px;
+  margin: 50px;
+  margin-left: 70px;
+}
+
+.bill-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+import React, { useState } from "react";
+import "./App.css";
+const App = () => {
+  const [billAmount, setBillAmount] = useState("");
+  const [tipPercentage, setTipPercentage] = useState("");
+  const [tipAmount, setTipAmount] = useState("");
+  const [totalAmount, setTotalAmount] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  function calculateTip() {
+    if (billAmount === "" || tipPercentage === "") {
+      setErrorMsg("Enter Valid Input");
+    } else {
+      setErrorMsg("");
+      let billAmountValue = parseFloat(billAmount);
+      let tipPercentageValue = parseFloat(tipPercentage);
+
+      let calculateTipAmount = (billAmountValue / 100) * tipPercentageValue;
+      let calculateTotalAmount = billAmountValue + calculateTipAmount;
+
+      setTipAmount(calculateTipAmount.toFixed());
+      setTotalAmount(calculateTotalAmount.toFixed());
+    }
+  }
+
+  return (
+    <div className="container">
+      <h1>Tip Calculator</h1>
+      <div className="bill-div">
+        <label id="billLabel">BILL AMOUNT</label>
+        <br />
+        <input
+          type="number"
+          value={billAmount}
+          onChange={(e) => setBillAmount(e.target.value)}
+          id="billInput"
+        />
+        <br />
+      </div>
+      <div>
+        <label id="billLabel">TIP PERCENTAGE</label>
+        <br />
+        <input
+          type="number"
+          value={tipPercentage}
+          onChange={(e) => setTipPercentage(e.target.value)}
+          id="billInput"
+        />
+        <br />
+      </div>
+      <div>
+        <label id="billLabel">TIP AMOUNT</label>
+        <br />
+        <input type="number" value={tipAmount} readOnly id="billInput" />
+        <br />
+      </div>
+      <div>
+        <label id="billLabel">TOTAL AMOUNT</label>
+        <br />
+        <input type="number" value={totalAmount} readOnly id="billInput" />
+        <br />
+      </div>
+      <div>
+        <button onClick={calculateTip} className="btnDiv">
+          CALCULATOR
+        </button>
+        <p style={{ color: "red" }}>{errorMsg}</p>
+      </div>
+    </div>
+  );
+};
+
+export default App; */
